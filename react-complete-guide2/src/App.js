@@ -5,7 +5,7 @@ import UserInput from './UserInput/UserInput';
 import UserOutPut from './UserOutput/UserOutPut';
   const app=props =>{
     const setOutPutstate ={
-      userName:"supermax"
+      userName:"Bijendra"
     }
      const [personState, setPersonstate]=useState({
     person :[
@@ -75,6 +75,7 @@ import UserOutPut from './UserOutput/UserOutPut';
            changed={nameChangedHandler}
            />
           <UserInput/>
+            <UserOutPut userName={setOutPutstate.userName}/>
             <UserOutPut userName={setOutPutstate.userName}/>
             <UserOutPut userName={setOutPutstate.userName}/>
           </div>
