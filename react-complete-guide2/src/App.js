@@ -22,7 +22,7 @@ import UserOutPut from './UserOutput/UserOutPut';
     setPersonstate( { 
       person :[
       {name : newName, age :24 },
-      {name :'pandey', age :28 },
+      {name :'pandeymohit', age :28 },
       {name :'mukul', age :27 }
   
      ]
