@@ -4,7 +4,7 @@ import Person from './Person/Person';
 //import UserInput from './UserInput/UserInput';
 //import UserOutPut from './UserOutput/UserOutPut';
 //import { render } from 'react-dom';
-  class App1 extends Component{
+  class App extends Component{
     
      State = {
     person :[
@@ -13,8 +13,8 @@ import Person from './Person/Person';
       {name :'mukul', age :24 }
 
     ],
-    otherState :'some other value'
-        showPerson:false
+    otherState :'some other value',
+        showPerson :false 
 
    } 
    
@@ -50,7 +50,11 @@ this.setState({showPerson : !doesShow});
     padding:'8px',
     cursor:'ponter'
   };
+let person =null;
+if (this.state.showPerson){
+    
 
+};
     return (
       <div className="App">
           <h1> hi i am react doveloper  </h1>
@@ -58,7 +62,7 @@ this.setState({showPerson : !doesShow});
           <button 
           style={style}
           onClick={ () => switchNameHandler('pandey !')}>
-             switchName </button>
+             toggleperson </button>
           <Person 
             name={this.State.person[0].name}
             age={this.State.person[0].age}
@@ -85,8 +89,9 @@ this.setState({showPerson : !doesShow});
             <UserOutPut userName={setOutPutstate.userName}/>
             <UserOutPut userName={setOutPutstate.userName}/>
           </div> : null
-          }
+          );
           </div>
-    );
-};
-export default App1;
+    )
+  };
+         } 
+         export default app1;
