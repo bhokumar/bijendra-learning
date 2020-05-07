@@ -5,17 +5,30 @@ import Person from './Person/Person';
 //import UserInput from './UserInput/UserInput';
 //import UserOutPut from './UserOutput/UserOutPut';
 //import { render } from 'react-dom';
+<<<<<<< HEAD
  class App extends Component{
 
    State = {
    person :[
+=======
+  class App extends Component{
+    
+     State = {
+    person :[
+>>>>>>> c914bca0867f324c70dcd63b8e071abbec7c835d
       {name :'bijendra', age :22 },
       {name :'pandey1', age :23 },
       {name :'mukul', age :24 }
 
+<<<<<<< HEAD
    ],
    otherState :'some other value',
        showPerson :false 
+=======
+    ],
+    otherState :'some other value',
+        showPerson :false 
+>>>>>>> c914bca0867f324c70dcd63b8e071abbec7c835d
 
    } 
   
@@ -94,5 +107,9 @@ if (this.state.showPerson){
     )
   };
          } 
+<<<<<<< HEAD
         export default app1;
 
+=======
+         export default app1;
+>>>>>>> c914bca0867f324c70dcd63b8e071abbec7c835d
