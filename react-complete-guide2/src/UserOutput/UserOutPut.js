@@ -2,10 +2,9 @@ import React from 'react';
 const UserOutput=(props)=>{
     return(
         <div>
-            <p>
-                some rendom text!
-              <p>  userName:{props.userName}</p>
-            </p>
+                   <p> userName: {props.userName}</p> 
+                   <p>   i hope i'll be overwritten</p>
+            
         </div>
     );
 
