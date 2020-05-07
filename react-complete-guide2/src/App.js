@@ -10,7 +10,7 @@ import UserOutPut from './UserOutput/UserOutPut';
      const [personState, setPersonstate]=useState({
     person :[
       {name :'bijendra', age :22 },
-      {name :'pandey', age :23 },
+      {name :'pandey1', age :23 },
       {name :'mukul', age :24 }
 
     ],
@@ -22,7 +22,7 @@ import UserOutPut from './UserOutput/UserOutPut';
     setPersonstate( { 
       person :[
       {name : newName, age :24 },
-      {name :'pandey', age :28 },
+      {name :'pandeymohit', age :28 },
       {name :'mukul', age :27 }
   
      ]
