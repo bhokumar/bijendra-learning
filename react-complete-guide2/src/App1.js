@@ -1,31 +1,31 @@
+
 import React, { useState, Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
 //import UserInput from './UserInput/UserInput';
 //import UserOutPut from './UserOutput/UserOutPut';
 //import { render } from 'react-dom';
-  class App1 extends Component{
-    
-     State = {
-    person :[
+ class App extends Component{
+
+   State = {
+   person :[
       {name :'bijendra', age :22 },
       {name :'pandey1', age :23 },
       {name :'mukul', age :24 }
 
-    ],
-    otherState :'some other value'
-        showPerson:false
+   ],
+   otherState :'some other value',
+       showPerson :false 
 
    } 
-   
-     switchNameHandler = ( newName ) => {
-    this.setState({
-       person :[
+  
+    switchNameHandler = ( newName ) => {
+   this.setState({
+      person :[
       {name : newName, age :24 },
       {name :'pandeymohit', age :28 },
       {name :'mukul', age :27 }
-  
-     ]
+       ]
      } )
   }
       nameChangedHandler =( event ) => {
@@ -37,7 +37,7 @@ import Person from './Person/Person';
   
      ]
      })
-  }
+ }
   togglePersonHandler=() => {
       const doesShow=this.State.showPerson;
 this.setState({showPerson : !doesShow});
@@ -50,7 +50,11 @@ this.setState({showPerson : !doesShow});
     padding:'8px',
     cursor:'ponter'
   };
+let person =null;
+if (this.state.showPerson){
+    
 
+};
     return (
       <div className="App">
           <h1> hi i am react doveloper  </h1>
@@ -58,7 +62,7 @@ this.setState({showPerson : !doesShow});
           <button 
           style={style}
           onClick={ () => switchNameHandler('pandey !')}>
-             switchName </button>
+             toggleperson </button>
           <Person 
             name={this.State.person[0].name}
             age={this.State.person[0].age}
@@ -70,23 +74,25 @@ this.setState({showPerson : !doesShow});
           <div>
           <Person 
             name={this.State.person[1].name} 
+
             age={this.State.person[1].age}
-            click={()=> this.switchNameHandler.bind(this,'Rathore')} 
+           click={()=> this.switchNameHandler.bind(this,'Rathore')} 
             changed={nameChangedHandler} > 
-            my hobbies : Racing</Person>
-          <Person
-           name={personState.person[2].name }
+            my hobbies : Racing</Person>          <Person
+          name={personState.person[2].name }
            age={personState.person[2].age}
            click={()=> switchNameHandler('Rathore')} 
            changed={nameChangedHandler}
            person/>
           <UserInput/>
-            <UserOutPut userName={setOutPutstate.userName}/>
-            <UserOutPut userName={setOutPutstate.userName}/>
-            <UserOutPut userName={setOutPutstate.userName}/>
+           <UserOutPut userName={setOutPutstate.userName}/>
+           <UserOutPut userName={setOutPutstate.userName}/>
+           <UserOutPut userName={setOutPutstate.userName}/>
           </div> : null
-          }
+          );
           </div>
-    );
-};
-export default App1;
+    )
+  };
+         } 
+        export default app1;
+
